@@ -10,10 +10,9 @@ public class theMonths {
 
     public static void monthQuestion(){
         System.out.println("Write the number of the month required");
-        Scanner input = new Scanner(System.in);
-        int monthInput = input.nextInt();
-        //daysInMonth(monthInput);
-        daysMonth(monthInput);
+        ScannerClass monthInput = new ScannerClass();
+        int monthNumber = monthInput.numScan();
+        daysMonth(monthNumber);
     }
 
     public static void daysInMonth(int month) {
